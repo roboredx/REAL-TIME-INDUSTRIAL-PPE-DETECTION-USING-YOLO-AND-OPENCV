@@ -1,3 +1,50 @@
+# Industrial PPE Detection Using YOLO
+
+## Overview
+A computer-vision project that detects workers and personal protective equipment (PPE) using YOLO and OpenCV.
+
+## Features
+- Real-time webcam detection
+- Detection of people and selected PPE classes
+- Bounding boxes with confidence percentages
+- Visual indicators for detected PPE
+- Model evaluation using precision, recall, mAP, and confusion matrices
+
+## Technologies
+- Python
+- Ultralytics YOLO
+- PyTorch
+- OpenCV
+- NumPy
+- Matplotlib
+
+## Dataset
+The project uses the SH17 dataset for a five-class PPE detection experiment:
+person, gloves, helmet, shoes, and safety vest.
+
+Dataset source: https://github.com/ahmadmughees/SH17dataset
+
+The prepared dataset contains 6,479 training images, 810 validation images, and 810 test images.
+
+## Results
+- Precision: 60.47%
+- Recall: 51.86%
+- mAP@0.50: 52.13%
+- mAP@0.50–0.95: 33.88%
+
+These results apply to the evaluated SH17 test split and the corresponding trained checkpoint.
+
+## Run the Project
+1. Install Python.
+2. Create and activate a virtual environment.
+3. Install the dependencies listed in `requirements.txt`.
+4. Obtain the appropriate trained model checkpoint.
+5. Run `python detect_live.py` to start webcam detection.
+
+## Limitations
+The current PPE association logic does not guarantee that every worker is wearing all required PPE. Detection confidence is not the same as detection accuracy.
+
+
 Here is the complete list of software, datasets, libraries, and files used or prepared for your Industrial PPE Detection project, without verification commands.
 
 ## 1. Software and Python libraries
